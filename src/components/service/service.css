@@ -1,0 +1,92 @@
+/* Base styles */
+.services-container {
+  padding: 120px;
+  background-color: #4f3ee8;
+  text-align: center;
+}
+
+.services-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-box {
+  background-color: white;
+  padding: 65px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.6s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.service-box:hover {
+  transform: scale(1.25);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-box:active {
+  transform: scale(0.98); /* Slightly reduce size when clicked */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduce shadow on click */
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  .services-container {
+      padding: 40px;
+  }
+
+  .services-heading {
+      font-size: 28px;
+      margin-bottom: 20px;
+  }
+
+  .services-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+
+  .service-box {
+      width: 90%;
+      padding: 40px;
+  }
+
+  .icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+}
